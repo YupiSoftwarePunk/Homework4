@@ -2,3 +2,14 @@ C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.Genera
 C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.AssemblyInfoInputs.cache
 C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.AssemblyInfo.cs
 C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Documents\projects C#\Howemork4\bin\Debug\net8.0\Howemork4.exe
+C:\Users\Denis\Documents\projects C#\Howemork4\bin\Debug\net8.0\Howemork4.deps.json
+C:\Users\Denis\Documents\projects C#\Howemork4\bin\Debug\net8.0\Howemork4.runtimeconfig.json
+C:\Users\Denis\Documents\projects C#\Howemork4\bin\Debug\net8.0\Howemork4.dll
+C:\Users\Denis\Documents\projects C#\Howemork4\bin\Debug\net8.0\Howemork4.pdb
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.sourcelink.json
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.dll
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\refint\Howemork4.dll
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.pdb
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\Howemork4.genruntimeconfig.cache
+C:\Users\Denis\Documents\projects C#\Howemork4\obj\Debug\net8.0\ref\Howemork4.dll
