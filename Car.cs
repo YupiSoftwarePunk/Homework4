@@ -8,11 +8,11 @@ namespace Howemork4
 {
     public struct Car
     {
-        string VinNum { get; set; }
-        string Brand { get; set; }
-        string Model { get; set; }
-        int Year { get; set; }
-        string Colour { get; set; }
+        public string VinNum { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public string Colour { get; set; }
 
         public string Info() => $"Марка машины: {Brand}, Модель: {Model}, Год выпуска: {Year}, Цвет: {Colour}, Вин-номер двигателя: {VinNum}";
 

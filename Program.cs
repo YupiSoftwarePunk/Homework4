@@ -16,26 +16,50 @@
             Console.WriteLine("Добавьте новую машину: ");
 
             Console.Write("Введите марку: ");
-            string brand = Convert.ToString(Console.Read());
+            string brand = Console.ReadLine();
 
             Console.Write("Введите модель: ");
-            string model = Convert.ToString(Console.Read());
+            string model = Console.ReadLine();
 
             Console.Write("Введите год выпуска: ");
-            int year = (int)Convert.ToInt64(Console.Read());
+            int year = int.Parse(Console.ReadLine());
 
             Console.Write("Введите цвет: ");
-            string colour = Convert.ToString(Console.Read());
+            string colour = Console.ReadLine();
 
             Console.Write("Введите вин-номер: ");
-            string vinNum = Convert.ToString(Console.Read());
+            string vinNum = Console.ReadLine();
 
             cars.Add(new Car(vinNum, brand, model, year, colour));
 
-            foreach (var i in cars)
+            Console.WriteLine("\n\nСписок автомобилей до удаления и сортировки:");
+            foreach (var car in cars)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"Марка: {car.Brand}, Модель: {car.Model}, VIN: {car.VinNum}, Цвет: {car.Colour}, Год: {car.Year}");
+            }
+
+            cars.Sort((car1, car2) => car1.Year.CompareTo(car2.Year));
+
+            Console.Write("\n\n\nВведите VIN-номер для удаления: ");
+            string vinToRemove = Console.ReadLine();
+
+            int removedCount = cars.RemoveAll(car => car.VinNum == vinToRemove);
+
+            if (removedCount > 0)
+            {
+                Console.WriteLine("\nАвтомобиль удален.");
+            }
+            else
+            {
+                Console.WriteLine("\nАвтомобиль с таким VIN-номером не найден.");
+            }
+
+
+            Console.WriteLine("\n\nСписок автомобилей после удаления и сортировки:");
+            foreach (var car in cars)
+            {
+                Console.WriteLine($"Марка: {car.Brand}, Модель: {car.Model}, Вин-номер мотора: {car.VinNum}, Цвет: {car.Colour}, Год: {car.Year}");
             }
         }
     }
-}
+} 
