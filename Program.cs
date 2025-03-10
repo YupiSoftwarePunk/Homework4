@@ -60,6 +60,37 @@
             {
                 Console.WriteLine($"Марка: {car.Brand}, Модель: {car.Model}, Вин-номер мотора: {car.VinNum}, Цвет: {car.Colour}, Год: {car.Year}");
             }
+
+            Console.WriteLine("\n\n\n");
+
+
+            List<Employee> employees = new List<Employee>();
+
+            employees.Add(new Employee("Мышин", "Александр", "Сергеевич", "слесарь", 1999));
+            employees.Add(new Employee("Сушкин", "Денис", "Максимович", "пекарь", 2020));
+            employees.Add(new Employee("Плюшкин", "Евгений", "Алексеевич", "программист", 1980));
+            employees.Add(new Employee("Лукин", "Владислав", "Денисович", "сантехник", 1973));
+            employees.Add(new Employee("Шишкин", "Иван", "Артемович", "радиоведущий", 1996));
+
+
+            Console.WriteLine("Добавьте новую машину: ");
+
+            Console.Write("Введите марку: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Введите модель: ");
+            string surname = Console.ReadLine();
+
+            Console.Write("Введите год выпуска: ");
+            string secondName = Console.ReadLine();
+
+            Console.Write("Введите цвет: ");
+            string job = Console.ReadLine();
+
+            Console.Write("Введите вин-номер: ");
+            int hireYear = int.Parse(Console.ReadLine());
+
+            employees.Add(new Employee(surname, name, secondName, job, hireYear));
         }
     }
 } 
