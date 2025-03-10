@@ -35,7 +35,7 @@
             Console.WriteLine("\n\nСписок автомобилей до удаления и сортировки:");
             foreach (var car in cars)
             {
-                Console.WriteLine($"Марка: {car.Brand}, Модель: {car.Model}, VIN: {car.VinNum}, Цвет: {car.Colour}, Год: {car.Year}");
+                Console.WriteLine($"Марка: {car.Brand}, Модель: {car.Model}, Вин-номер: {car.VinNum}, Цвет: {car.Colour}, Год: {car.Year}");
             }
 
             cars.Sort((car1, car2) => car1.Year.CompareTo(car2.Year));
@@ -64,6 +64,7 @@
             Console.WriteLine("\n\n\n");
 
 
+
             List<Employee> employees = new List<Employee>();
 
             employees.Add(new Employee("Мышин", "Александр", "Сергеевич", "слесарь", 1999));
@@ -73,24 +74,68 @@
             employees.Add(new Employee("Шишкин", "Иван", "Артемович", "радиоведущий", 1996));
 
 
-            Console.WriteLine("Добавьте новую машину: ");
+            Console.WriteLine("Добавьте нового сотрудника: ");
 
-            Console.Write("Введите марку: ");
-            string name = Console.ReadLine();
-
-            Console.Write("Введите модель: ");
+            Console.Write("Введите фамилию: ");
             string surname = Console.ReadLine();
 
-            Console.Write("Введите год выпуска: ");
+            Console.Write("Введите имя: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Введите отчество: ");
             string secondName = Console.ReadLine();
 
-            Console.Write("Введите цвет: ");
+            Console.Write("Введите должность: ");
             string job = Console.ReadLine();
 
-            Console.Write("Введите вин-номер: ");
+            Console.Write("Введите год устройства на работу: ");
             int hireYear = int.Parse(Console.ReadLine());
 
             employees.Add(new Employee(surname, name, secondName, job, hireYear));
+
+
+            Console.WriteLine("\n\n");
+
+            Console.WriteLine("Список без удаления и сортировки");
+            foreach (var empl in employees)
+            {
+                Console.WriteLine($"Имя: {empl.Name}, Фамилия: {empl.Surname}, Отчество: {empl.Secondname}, Должность: {empl.Job}, Год принятия на работу: {empl.HireYear}");
+            }
+
+            Console.WriteLine("\n\n");
+
+
+            employees.Sort((e1, e2) => e1.Surname.CompareTo(e2.Surname));
+
+           
+
+            Console.Write("\nВведите фамилию для удаления: ");
+            string surnameRemove = Console.ReadLine();
+
+            Console.Write("\nВведите имя для удаления: ");
+            string nameRemove = Console.ReadLine();
+
+            Console.Write("\nВведите отчество для удаления: ");
+            string secondNameRemove = Console.ReadLine();
+
+
+            int removeCount = employees.RemoveAll(empl => empl.Surname == surnameRemove && empl.Name == nameRemove && empl.Secondname == secondNameRemove);
+
+            if (removedCount > 0)
+            {
+                Console.WriteLine("\nСотрудник удален.");
+            }
+            else
+            {
+                Console.WriteLine("\nСотрудник с таким ФИО не найден.");
+            }
+
+
+            Console.WriteLine("Список после удаления и сортировки");
+            foreach (var empl in employees)
+            {
+                Console.WriteLine($"Имя: {empl.Name}, Фамилия: {empl.Surname}, Отчество: {empl.Secondname}, Должность: {empl.Job}, Год принятия на работу: {empl.HireYear}");
+            }
         }
     }
 } 

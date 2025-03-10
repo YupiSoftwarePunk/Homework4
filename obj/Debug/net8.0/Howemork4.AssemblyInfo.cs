@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Howemork4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b813daf421ce79487055f2e4cdee01b38e7b2c57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73e2479608d78040e8cded06498cf8b7dc23942c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Howemork4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Howemork4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
